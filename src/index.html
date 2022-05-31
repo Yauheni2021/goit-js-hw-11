@@ -12,41 +12,26 @@
     />
   </head>
   <body>
-    <header class="header">
-    <div class="container">
-      <h1>Images</h1>
+    <div>
       <form class="search-form" id="search-form">
-        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-        <button type="submit">Search</button>
+        <input class="search-form__input" type="text" name="searchQuery" autocomplete="off"
+          placeholder="Search images..." />
+    
+        <button class="button" type="submit">
+          <img src='./images/search.png'></use>
+          Search
+        </button>
       </form>
     </div>
-    </header>
-
-    <main class="main">
-      <section class="section">
-      <div class="gallery">
-        <div class="photo-card">
-          <img src="" alt="" loading="lazy" />
-          <div class="info">
-            <p class="info-item">
-              <b>Likes</b>
-            </p>
-            <p class="info-item">
-              <b>Views</b>
-            </p>
-            <p class="info-item">
-              <b>Comments</b>
-            </p>
-            <p class="info-item">
-              <b>Downloads</b>
-            </p>
-          </div>
-        </div>
-      </div>
-      <button type="button" class="load-more">Load more</button>
-      </section>
-    </main>
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    
+    <div class="gallery"></div>
+    
+    
+    <div class="scroll-up">
+      <img src='./images/up-button.png '></use>
+    </div>
+    
+    <div id="sentinel"></div>
     <script src="./index.js"></script>
   </body>
 </html>
